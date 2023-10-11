@@ -1,29 +1,12 @@
-# README #
+# kibana-kube
+kibana-kube は Elasticsearch が集めたログデータからユーザーが検索したいキーワードを
+可視化することができます。
+本リポジトリには、必要なマニフェストファイル等が入っています。
 
-This README would normally document whatever steps are necessary to get your application up and running.
+## 動作環境
+- Elasticsearch: >=8
 
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+## 設定
+```
+k apply -f kibana.yaml
+```
